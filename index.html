@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Automatyzujemy powtarzalne procesy w Twojej firmie, żebyś mógł skupić się na tym, co naprawdę generuje zysk">
-    <title>Konsultacje AI & Automatyzacja Procesów dla MSP</title>
+    <meta name="description" content="Automatyzujemy powtarzalne procesy w małych i średnich firmach. n8n, Make, Zapier, OpenAI, Claude API. Szybki efekt w 2-4 tygodnie.">
+    <title>AI & Automatyzacja Procesów dla MSP | Konsultacje, Wdrożenia, Szkolenia</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap');
 
@@ -55,7 +55,7 @@
         }
 
         header {
-            padding: 100px 40px;
+            padding: 80px 40px;
             text-align: center;
             position: relative;
             border-bottom: 2px solid var(--primary);
@@ -80,45 +80,52 @@
 
         h1 {
             font-family: 'Orbitron', sans-serif;
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 900;
             text-transform: uppercase;
-            letter-spacing: 8px;
+            letter-spacing: 6px;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             margin-bottom: 1rem;
-            text-shadow: 0 0 30px var(--glow);
+            line-height: 1.2;
         }
 
         .tagline {
-            font-size: 1.8rem;
-            letter-spacing: 3px;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
             color: var(--primary);
             font-weight: 300;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: rgba(255, 255, 255, 0.7);
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+            line-height: 1.7;
+        }
+
+        .tech-stack {
+            font-size: 0.9rem;
+            color: rgba(0, 240, 255, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         .section {
-            padding: 80px 40px;
+            padding: 60px 40px;
         }
 
         .section-title {
             font-family: 'Orbitron', sans-serif;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
             text-transform: uppercase;
-            letter-spacing: 6px;
+            letter-spacing: 4px;
             color: var(--primary);
             position: relative;
         }
@@ -126,12 +133,115 @@
         .section-title::after {
             content: '';
             position: absolute;
-            bottom: -20px;
+            bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
-            width: 100px;
+            width: 80px;
             height: 3px;
             background: linear-gradient(90deg, transparent, var(--primary), transparent);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .benefit {
+            background: rgba(10, 14, 39, 0.4);
+            padding: 30px;
+            border-left: 3px solid var(--primary);
+            transition: all 0.3s;
+        }
+
+        .benefit:hover {
+            background: rgba(10, 14, 39, 0.6);
+            border-left-width: 5px;
+        }
+
+        .benefit h3 {
+            color: var(--primary);
+            font-family: 'Orbitron', sans-serif;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .benefit p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+
+        .industries {
+            background: rgba(0, 240, 255, 0.02);
+            border-top: 1px solid rgba(0, 240, 255, 0.2);
+            border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+        }
+
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .industry-card {
+            background: rgba(10, 14, 39, 0.6);
+            padding: 30px;
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            transition: all 0.3s;
+        }
+
+        .industry-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 0 20px var(--glow);
+        }
+
+        .industry-card h3 {
+            color: var(--primary);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .industry-card .subtitle-small {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .industry-card h4 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .industry-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .industry-card li {
+            padding: 8px 0;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+
+        .industry-card li:before {
+            content: "▸ ";
+            color: var(--primary);
+        }
+
+        .example-box {
+            background: rgba(0, 240, 255, 0.05);
+            padding: 15px;
+            margin-top: 15px;
+            border-left: 3px solid var(--primary);
+        }
+
+        .example-box strong {
+            color: var(--primary);
         }
 
         .packages-grid {
@@ -154,7 +264,7 @@
         .package:hover {
             border-color: var(--primary);
             box-shadow: 0 0 30px var(--glow);
-            transform: translateY(-10px);
+            transform: translateY(-5px);
         }
 
         .package h3 {
@@ -166,10 +276,16 @@
         }
 
         .package .price {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: #fff;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             font-weight: 600;
+        }
+
+        .package .duration {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
         }
 
         .package ul {
@@ -180,98 +296,113 @@
         .package li {
             padding: 10px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.5;
         }
 
         .package li:before {
-            content: "▸ ";
+            content: "✓ ";
             color: var(--primary);
             font-weight: bold;
+            margin-right: 8px;
         }
 
-        .industries {
-            background: rgba(0, 240, 255, 0.02);
-            border-top: 1px solid rgba(0, 240, 255, 0.2);
-            border-bottom: 1px solid rgba(0, 240, 255, 0.2);
-        }
-
-        .industry-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .industry-card {
-            background: rgba(10, 14, 39, 0.4);
-            padding: 30px;
-            border-left: 3px solid var(--primary);
-        }
-
-        .industry-card h3 {
-            color: var(--primary);
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-
-        .industry-card p {
-            color: rgba(255, 255, 255, 0.8);
-            line-height: 1.7;
-            margin-bottom: 10px;
-        }
-
-        .industry-card .example {
+        .package .note {
+            color: rgba(255, 255, 255, 0.7);
             font-size: 0.95rem;
-            color: rgba(0, 240, 255, 0.8);
+            margin-top: 15px;
             font-style: italic;
         }
 
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+        .comparison-table {
+            width: 100%;
             margin-top: 40px;
+            border-collapse: collapse;
         }
 
-        .benefit {
-            text-align: center;
+        .comparison-table th {
+            background: rgba(0, 240, 255, 0.1);
+            padding: 15px;
+            text-align: left;
+            color: var(--primary);
+            font-family: 'Orbitron', sans-serif;
+            border: 1px solid rgba(0, 240, 255, 0.2);
+        }
+
+        .comparison-table td {
+            padding: 12px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .comparison-table tr:hover {
+            background: rgba(0, 240, 255, 0.05);
+        }
+
+        .use-cases {
+            background: rgba(112, 0, 255, 0.05);
+        }
+
+        .use-case {
+            background: rgba(10, 14, 39, 0.6);
             padding: 30px;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--secondary);
         }
 
-        .benefit-icon {
-            font-size: 3rem;
+        .use-case h4 {
+            color: var(--secondary);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.4rem;
             margin-bottom: 15px;
         }
 
-        .benefit h3 {
-            color: var(--primary);
-            font-family: 'Orbitron', sans-serif;
-            margin-bottom: 10px;
-            font-size: 1.3rem;
+        .use-case .scenario {
+            margin-top: 15px;
         }
 
-        .benefit p {
-            color: rgba(255, 255, 255, 0.8);
-            line-height: 1.6;
+        .use-case .step {
+            padding: 8px 0 8px 25px;
+            position: relative;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .use-case .step:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        .use-case .tools {
+            margin-top: 15px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+
+        .use-case .tools strong {
+            color: var(--primary);
         }
 
         .cta-section {
             text-align: center;
-            padding: 100px 40px;
+            padding: 80px 40px;
             background: linear-gradient(135deg, rgba(0, 240, 255, 0.1), rgba(112, 0, 255, 0.1));
         }
 
         .cta-section h2 {
             font-family: 'Orbitron', sans-serif;
             font-size: 2.5rem;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             color: var(--primary);
             text-transform: uppercase;
         }
 
         .cta-section p {
-            font-size: 1.3rem;
-            margin-bottom: 40px;
+            font-size: 1.2rem;
+            margin-bottom: 35px;
             color: rgba(255, 255, 255, 0.9);
         }
 
@@ -320,16 +451,17 @@
             font-family: 'Orbitron', sans-serif;
             letter-spacing: 2px;
             color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
         }
 
         @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
-                letter-spacing: 4px;
+                letter-spacing: 3px;
             }
 
             .tagline {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
 
             .section-title {
@@ -341,7 +473,11 @@
             }
 
             .section, .cta-section {
-                padding: 60px 20px;
+                padding: 50px 20px;
+            }
+
+            .comparison-table {
+                font-size: 0.85rem;
             }
         }
     </style>
@@ -349,38 +485,35 @@
 <body>
     <header>
         <div class="container">
-            <h1>AI & Automatyzacja</h1>
+            <h1>Konsultacje AI<br>& Automatyzacja Procesów</h1>
             <p class="tagline">Dla małych i średnich przedsiębiorstw</p>
             <p class="subtitle">
                 Automatyzujemy powtarzalne procesy w Twojej firmie,<br>
                 żebyś mógł skupić się na tym, co naprawdę generuje zysk
             </p>
+            <p class="tech-stack">n8n | Make | Zapier | OpenAI API | Claude API</p>
         </div>
     </header>
 
     <section class="section">
         <div class="container">
-            <h2 class="section-title">Dlaczego my?</h2>
+            <h2 class="section-title">Dlaczego MSP, a nie korporacje?</h2>
             <div class="benefits-grid">
                 <div class="benefit">
-                    <div class="benefit-icon">⚡</div>
+                    <h3>Krótki cykl sprzedażowy</h3>
+                    <p>Decyzje zapadają w dni, nie miesiące. Właściciel = decydent, brak komitetów zakupowych.</p>
+                </div>
+                <div class="benefit">
                     <h3>Szybki efekt</h3>
-                    <p>Pierwsza automatyzacja działa w 2-4 tygodnie od podpisania umowy</p>
+                    <p>Pierwsza automatyzacja działa w 2-4 tygodnie. Efekty widoczne od razu — budują referencje.</p>
                 </div>
                 <div class="benefit">
-                    <div class="benefit-icon">💰</div>
-                    <h3>Konkretne oszczędności</h3>
-                    <p>Nie sprzedajemy technologii — sprzedajemy zaoszczędzony czas i zredukowane koszty</p>
+                    <h3>Wysoka lojalność</h3>
+                    <p>Po udanym wdrożeniu klienci zostają na lata. Niska konkurencja w segmencie praktycznych automatyzacji.</p>
                 </div>
                 <div class="benefit">
-                    <div class="benefit-icon">🛡️</div>
-                    <h3>Stała opieka</h3>
-                    <p>Monitoring, szybkie naprawy i proaktywna optymalizacja w abonamencie</p>
-                </div>
-                <div class="benefit">
-                    <div class="benefit-icon">🎯</div>
-                    <h3>Bez technicznego żargonu</h3>
-                    <p>Praktyczne rozwiązania bez wymagania wiedzy technicznej</p>
+                    <h3>Praktyczność > technologia</h3>
+                    <p>Nie sprzedajemy n8n czy Zapiera. Sprzedajemy oszczędność 3h dziennie na kopiowaniu danych.</p>
                 </div>
             </div>
         </div>
@@ -392,26 +525,64 @@
             <div class="industry-grid">
                 <div class="industry-card">
                     <h3>Firmy usługowe</h3>
-                    <p>Gabinety lekarskie, salony beauty, warsztaty, biura rachunkowe, kancelarie prawne</p>
-                    <p class="example">
-                        Przykład: Automatyczne potwierdzenia wizyt SMS/email → redukcja no-show o 40-60%
-                    </p>
+                    <p class="subtitle-small">Gabinety lekarskie, stomatologiczne, salony beauty, fryzjerskie, SPA, warsztaty, biura rachunkowe, kancelarie prawne, agencje marketingowe</p>
+                    
+                    <h4>Kluczowe bóle:</h4>
+                    <ul>
+                        <li>Umawianie wizyt ręcznie (2-4h dziennie recepcji)</li>
+                        <li>Brak przypomnień → no-show rate 15-25%</li>
+                        <li>Ręczne wystawianie faktur</li>
+                        <li>Odpowiadanie na te same pytania wielokrotnie</li>
+                        <li>Opinie klientów zbierane chaotycznie</li>
+                    </ul>
+
+                    <div class="example-box">
+                        <strong>Quick win:</strong> Chatbot FAQ na stronie + automatyczne potwierdzenie wizyty SMS 24h przed → redukcja no-show o 40-60%
+                    </div>
+
+                    <div class="example-box">
+                        <strong>ROI przykład (salon 8 pracowników):</strong><br>
+                        Problem: recepcjonistka 3h/dzień na potwierdzenia<br>
+                        Koszt: 3h × 25 zł × 22 dni = 1 650 zł/mies.<br>
+                        Automatyzacja: 3 500 zł + 400 zł/mies.<br>
+                        Zwrot: ~2,5 miesiąca
+                    </div>
                 </div>
 
                 <div class="industry-card">
                     <h3>Firmy budowlane</h3>
-                    <p>Wykonawstwo, instalacje, deweloperzy, remonty</p>
-                    <p class="example">
-                        Przykład: Automatyczne raportowanie z budowy przez WhatsApp → transparentność dla inwestora
-                    </p>
+                    <p class="subtitle-small">Wykonawstwo, instalacje (elektryka, hydraulika, HVAC), deweloperzy, remonty</p>
+                    
+                    <h4>Kluczowe bóle:</h4>
+                    <ul>
+                        <li>Chaos w harmonogramach — zmiany nie docierają do wszystkich</li>
+                        <li>Ręczne tworzenie ofert/kosztorysów</li>
+                        <li>Zagubione faktury za materiały</li>
+                        <li>Brak śledzenia czasu pracy ekip</li>
+                        <li>Komunikacja przez WhatsApp — brak dokumentacji</li>
+                    </ul>
+
+                    <div class="example-box">
+                        <strong>Quick win:</strong> Bot WhatsApp do raportowania dziennego ekip → zdjęcia + dane automatycznie do arkusza. Czas tworzenia oferty: z 3h do 20 min.
+                    </div>
                 </div>
 
                 <div class="industry-card">
                     <h3>Firmy handlowe</h3>
-                    <p>Hurtownie, dystrybutorzy, e-commerce B2B, sklepy wielobranżowe</p>
-                    <p class="example">
-                        Przykład: AI przetwarza zamówienia z emaila → redukcja czasu z 3h do 20 min
-                    </p>
+                    <p class="subtitle-small">Hurtownie, dystrybutorzy, e-commerce B2B, sklepy wielobranżowe</p>
+                    
+                    <h4>Kluczowe bóle:</h4>
+                    <ul>
+                        <li>Ręczne wprowadzanie zamówień z email/telefonu</li>
+                        <li>Brak powiadomień o statusie dla klienta</li>
+                        <li>Kontrola stanów magazynowych nieaktualna</li>
+                        <li>Chaotyczna obsługa reklamacji</li>
+                        <li>Żmudne raportowanie sprzedaży</li>
+                    </ul>
+
+                    <div class="example-box">
+                        <strong>Quick win:</strong> AI przetwarza zamówienia z emaila → automatyczny wpis do ERP/arkusza. Powiadomienia SMS/email przy zmianie statusu zamówienia.
+                    </div>
                 </div>
             </div>
         </div>
@@ -424,48 +595,147 @@
                 <div class="package">
                     <h3>Starter</h3>
                     <div class="price">2 500 – 4 500 zł</div>
+                    <div class="duration">Jednorazowo | Realizacja: 1-2 tygodnie</div>
                     <ul>
                         <li>Jeden zautomatyzowany proces (end-to-end)</li>
-                        <li>Czas realizacji: 1-2 tygodnie</li>
+                        <li>Audyt wybranego procesu (2-3h)</li>
                         <li>Integracja z max. 3 narzędziami</li>
-                        <li>Wsparcie techniczne: 30 dni</li>
-                        <li>Dokumentacja + szkolenie (90 min)</li>
+                        <li>Testy z rzeczywistymi danymi</li>
+                        <li>Dokumentacja w języku biznesowym</li>
+                        <li>Wsparcie: 30 dni (email/telefon, reakcja do 24h)</li>
+                        <li>Szkolenie: 1 sesja 90 min dla 1-2 osób</li>
                     </ul>
-                    <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; margin-top: 15px;">
-                        Idealny test — minimalny ryzyko, szybki efekt
-                    </p>
+                    <p class="note">Cel: bramka zaufania. Minimalny ryzyko, szybki efekt. 60-90 dni → abonament lub Standard.</p>
                 </div>
 
                 <div class="package">
                     <h3>Standard</h3>
                     <div class="price">6 000 – 15 000 zł</div>
+                    <div class="duration">+ abonament 500-1500 zł/mies. | Realizacja: 3-6 tygodni</div>
                     <ul>
                         <li>Kompleksowa automatyzacja działu/procesu</li>
-                        <li>Czas realizacji: 3-6 tygodni</li>
-                        <li>Integracja do 8 narzędzi</li>
-                        <li>Abonament: 500-1500 zł/mies.</li>
-                        <li>Dashboard raportowy</li>
-                        <li>Szkolenie zespołu (2-3 sesje)</li>
+                        <li>Pełny audyt procesów działu</li>
+                        <li>Wdrożenie 3-8 powiązanych automatyzacji</li>
+                        <li>Integracja do 8 narzędzi (CRM, ERP, email, komunikatory)</li>
+                        <li>Dashboard raportowy (Google Data Studio lub dedykowany)</li>
+                        <li>Szkolenie zespołu: 2-3 sesje</li>
+                        <li>Abonament: monitoring, szybkie naprawy, miesięczny raport optymalizacyjny</li>
                     </ul>
-                    <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; margin-top: 15px;">
-                        Najpopularniejszy — pełna transformacja procesu
-                    </p>
+                    <p class="note">Najpopularniejszy. Pełna transformacja procesu biznesowego.</p>
                 </div>
 
                 <div class="package">
                     <h3>Enterprise MSP</h3>
                     <div class="price">20 000 – 50 000 zł</div>
+                    <div class="duration">+ abonament od 2 000 zł/mies. | Realizacja: indywidualna</div>
                     <ul>
-                        <li>Pełny audyt organizacji</li>
-                        <li>Wdrożenie wielu powiązanych automatyzacji</li>
-                        <li>Dedykowany dashboard</li>
-                        <li>Abonament: od 2 000 zł/mies.</li>
-                        <li>SLA: reakcja do 4h</li>
-                        <li>Kwartalny przegląd + roadmapa</li>
+                        <li>Pełny audyt organizacji i mapa procesów</li>
+                        <li>Wdrożenie wielu powiązanych automatyzacji (min. 3 działy)</li>
+                        <li>Dedykowany dashboard i system raportowania</li>
+                        <li>Szkolenie całego zespołu + dokumentacja procesowa</li>
+                        <li>SLA: reakcja do 4h w godzinach roboczych</li>
+                        <li>Kwartalny przegląd i roadmapa nowych automatyzacji</li>
                     </ul>
-                    <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; margin-top: 15px;">
-                        Dla firm 20-100 pracowników z złożonymi procesami
-                    </p>
+                    <p class="note">Dla firm 20-100 pracowników z złożonymi procesami operacyjnymi i wieloma systemami (ERP, CRM, magazyn).</p>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 80px;">Dlaczego my vs. typowa agencja IT?</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Cecha</th>
+                        <th>Typowa agencja IT</th>
+                        <th>My</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Czas do pierwszego efektu</td>
+                        <td>3-6 miesięcy</td>
+                        <td>2-4 tygodnie</td>
+                    </tr>
+                    <tr>
+                        <td>Bariera wejścia dla klienta</td>
+                        <td>Wysoka (przetargi, RFP)</td>
+                        <td>Niska (rozmowa telefoniczna)</td>
+                    </tr>
+                    <tr>
+                        <td>Zrozumiałość oferty</td>
+                        <td>Techniczna</td>
+                        <td>Biznesowa</td>
+                    </tr>
+                    <tr>
+                        <td>Model cenowy</td>
+                        <td>Projekt + maintenance</td>
+                        <td>Projekt + abonament</td>
+                    </tr>
+                    <tr>
+                        <td>Skalowalność</td>
+                        <td>Ograniczona</td>
+                        <td>Wysoka (SaaS tools)</td>
+                    </tr>
+                    <tr>
+                        <td>Obsługa posprzedażowa</td>
+                        <td>Ticketowa</td>
+                        <td>Proaktywna</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="section use-cases">
+        <div class="container">
+            <h2 class="section-title">Przykłady automatyzacji</h2>
+            
+            <div class="use-case">
+                <h4>Salon beauty — pełna automatyzacja obsługi rezerwacji</h4>
+                <div class="scenario">
+                    <div class="step">Klient wypełnia formularz rezerwacji na stronie</div>
+                    <div class="step">n8n odbiera dane i sprawdza dostępność w Google Calendar</div>
+                    <div class="step">Zapis wizyty w kalendarzu + CRM (Airtable)</div>
+                    <div class="step">SMS potwierdzający wysłany do klienta (Twilio)</div>
+                    <div class="step">24h przed wizytą — automatyczne przypomnienie SMS + email</div>
+                    <div class="step">2h po wizycie — prośba o opinię Google z linkiem</div>
+                    <div class="step">Tygodniowy raport: liczba wizyt, przychód, no-show rate</div>
+                </div>
+                <div class="tools">
+                    <strong>Narzędzia:</strong> n8n + Google Calendar + Airtable + Twilio + Gmail<br>
+                    <strong>Czas wdrożenia:</strong> 2-3 tygodnie | <strong>Koszt:</strong> 3 500-5 000 zł + 400 zł/mies.
+                </div>
+            </div>
+
+            <div class="use-case">
+                <h4>Firma budowlana — raportowanie dzienne z budowy</h4>
+                <div class="scenario">
+                    <div class="step">Pracownik wysyła codziennie WhatsApp z podsumowaniem dnia</div>
+                    <div class="step">Bot WhatsApp zbiera raport</div>
+                    <div class="step">Claude API analizuje: postęp, materiały, problemy, czas pracy</div>
+                    <div class="step">Dane trafiają do Google Sheets (rejestr dzienny)</div>
+                    <div class="step">Jeśli raport zawiera "problem" → natychmiastowe powiadomienie kierownika</div>
+                    <div class="step">Co piątek — automatyczny raport tygodniowy dla inwestora</div>
+                </div>
+                <div class="tools">
+                    <strong>Narzędzia:</strong> n8n + WhatsApp Business + Claude API + Google Sheets + Gmail<br>
+                    <strong>Czas wdrożenia:</strong> 3-4 tygodnie | <strong>Koszt:</strong> 6 000-9 000 zł + 600 zł/mies.
+                </div>
+            </div>
+
+            <div class="use-case">
+                <h4>Hurtownia — automatyzacja zamówień z emaila</h4>
+                <div class="scenario">
+                    <div class="step">Email z zamówieniem trafia na zamowienia@firma.pl</div>
+                    <div class="step">n8n odbiera email</div>
+                    <div class="step">GPT-4o-mini ekstraktuje: produkty, ilości, dane klienta, termin</div>
+                    <div class="step">Automatyczna weryfikacja stanu magazynu</div>
+                    <div class="step">Jeśli dostępny → zapis + potwierdzenie emailem do klienta</div>
+                    <div class="step">Jeśli brak → email do klienta z informacją + alert dla handlowca</div>
+                    <div class="step">Przy wysyłce — automatyczne powiadomienie SMS do klienta</div>
+                </div>
+                <div class="tools">
+                    <strong>Narzędzia:</strong> n8n + OpenAI API + Google Sheets + Twilio + Gmail<br>
+                    <strong>Czas wdrożenia:</strong> 3-5 tygodni | <strong>Koszt:</strong> 7 000-12 000 zł + 700 zł/mies.
                 </div>
             </div>
         </div>
@@ -481,7 +751,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 AI Konsultacje & Automatyzacja Procesów MSP</p>
+            <p>&copy; 2026 Konsultacje AI & Automatyzacja Procesów MSP</p>
+            <p style="margin-top: 10px; font-size: 0.8rem;">n8n | Make | Zapier | OpenAI | Claude | Praktyczne rozwiązania dla firm 2-100 pracowników</p>
         </div>
     </footer>
 </body>
