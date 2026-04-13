@@ -540,43 +540,38 @@
                 <!-- Firmy usługowe -->
                 <div class="industry-card">
                     <h3>Firmy usługowe</h3>
-                    <p class="subtitle-small">Gabinety, salony beauty, warsztaty, biura rachunkowe</p>
+                    <p class="subtitle-small">Gabinety lekarskie, stomatologiczne, salony beauty, fryzjerskie, SPA, warsztaty, biura rachunkowe, kancelarie prawne</p>
                     
-                    <h4>Co Cię boli:</h4>
+                    <h4>Kluczowe bóle:</h4>
                     <ul>
-                        <li>Recepcja 3 godziny dziennie odbiera telefony zamiast zajmować się klientami</li>
-                        <li>Co piąty klient nie przychodzi na wizytę (brak przypomnień)</li>
-                        <li>Ręczne wystawianie każdej faktury po wizycie</li>
-                        <li>Ciągle te same pytania: "jakie godziny?", "ile kosztuje?", "jak dojechać?"</li>
-                    </ul>
-
-                    <h4>Co możesz zyskać:</h4>
-                    <ul>
-                        <li>Klienci rezerwują wizyty sami online — recepcja oszczędza 2-3h dziennie</li>
-                        <li>Automatyczne przypomnienia SMS dzień przed wizytą — 40% mniej niestawiennictw</li>
-                        <li>Faktura wysyła się sama po wizycie</li>
-                        <li>Chatbot odpowiada na FAQ 24/7 — Ty odpoczywasz</li>
+                        <li>Umawianie wizyt ręcznie (2-4h dziennie recepcji)</li>
+                        <li>Brak przypomnień → no-show rate 15-25%</li>
+                        <li>Ręczne wystawianie faktur</li>
+                        <li>Odpowiadanie na te same pytania wielokrotnie</li>
                     </ul>
 
                     <div class="example-box">
-                        <strong>Przykład: Salon beauty (8 pracowników)</strong><br>
-                        Problem kosztuje: 1 650 zł/mies. (czas recepcji)<br>
-                        Rozwiązanie: 3 500 zł + 400 zł/mies.<br>
-                        Zwrot: 2,5 miesiąca
+                        <strong>Quick win:</strong> Automatyczne potwierdzenie wizyty SMS 24h przed → redukcja no-show o 40-60%
                     </div>
 
-                    <button class="accordion-btn">Zobacz szczegóły automatyzacji ▼</button>
+                    <div class="example-box">
+                        <strong>ROI (salon 8 pracowników):</strong> Koszt problemu: 1 650 zł/mies. | Automatyzacja: 3 500 zł + 400 zł/mies. | Zwrot: 2,5 mies.
+                    </div>
+
+                    <button class="accordion-btn">Zobacz przykład automatyzacji ▼</button>
                     <div class="accordion-content">
                         <div class="case-study-detail">
-                            <h5>Jak to działa:</h5>
-                            <div class="step">Klient rezerwuje online przez formularz na stronie</div>
-                            <div class="step">System sprawdza wolne terminy i zapisuje wizytę</div>
-                            <div class="step">Klient dostaje SMS z potwierdzeniem</div>
-                            <div class="step">Dzień przed wizytą — automatyczne przypomnienie</div>
-                            <div class="step">Po wizycie — faktura emailem + prośba o opinię Google</div>
-                            <div class="step">Co tydzień — raport: wizyty, przychód, niestawiennictwa</div>
+                            <h5>Pełna automatyzacja obsługi rezerwacji</h5>
+                            <div class="step">Klient wypełnia formularz rezerwacji na stronie</div>
+                            <div class="step">n8n odbiera dane i sprawdza dostępność w Google Calendar</div>
+                            <div class="step">Zapis wizyty w kalendarzu + CRM (Airtable)</div>
+                            <div class="step">SMS potwierdzający wysłany do klienta (Twilio)</div>
+                            <div class="step">24h przed wizytą — automatyczne przypomnienie SMS + email</div>
+                            <div class="step">2h po wizycie — prośba o opinię Google z linkiem</div>
+                            <div class="step">Tygodniowy raport: liczba wizyt, przychód, no-show rate</div>
                             
                             <div class="tech-info">
+                                <strong>Narzędzia:</strong> n8n + Google Calendar + Airtable + Twilio + Gmail<br>
                                 <strong>Czas wdrożenia:</strong> 2-3 tygodnie<br>
                                 <strong>Koszt:</strong> 3 500-5 000 zł + 400 zł/mies.
                             </div>
@@ -587,42 +582,34 @@
                 <!-- Firmy produkcyjne -->
                 <div class="industry-card">
                     <h3>Firmy produkcyjne</h3>
-                    <p class="subtitle-small">Zakłady produkcyjne, montażownie, producenci</p>
+                    <p class="subtitle-small">Producenci (przemysł spożywczy, metalowy, meblarski, plastikowy, elektroniczny), zakłady produkcyjne, montażownie, produkcja na zlecenie (OEM)</p>
                     
-                    <h4>Co Cię boli:</h4>
+                    <h4>Kluczowe bóle:</h4>
                     <ul>
-                        <li>Kierownik dowiaduje się o problemie na produkcji 2 godziny za późno</li>
-                        <li>Zamówienia materiałów "na czuja" — raz za dużo, raz za mało</li>
-                        <li>Zlecenia produkcyjne w Excelu gubią się między zmianami</li>
-                        <li>Raport dla zarządu robisz ręcznie całe popołudnie</li>
-                    </ul>
-
-                    <h4>Co możesz zyskać:</h4>
-                    <ul>
-                        <li>Alert SMS gdy odpady > norma lub maszyna stoi dłużej niż 30 min</li>
-                        <li>Automatyczne zamówienie gdy stan magazynu spada poniżej minimum</li>
-                        <li>Każda zmiana raportuje przez WhatsApp — wszystko trafia do jednego rejestru</li>
-                        <li>Raport tygodniowy generuje się sam w piątek rano</li>
+                        <li>Chaos w harmonogramach — zmiany nie docierają do wszystkich</li>
+                        <li>Zamówienia materiałów oparte na domysłach, nie danych</li>
+                        <li>Zlecenia produkcyjne w Excelu lub na papierze</li>
+                        <li>Komunikacja między zmianami chaotyczna</li>
+                        <li>Reklamacje bez systemu śledzenia statusu</li>
                     </ul>
 
                     <div class="example-box">
-                        <strong>Przykład: Zakład produkcyjny (30 pracowników)</strong><br>
-                        Problem kosztuje: 2 400 zł/mies. (czas + straty przez przestoje)<br>
-                        Rozwiązanie: 6 000-10 000 zł + 700 zł/mies.<br>
-                        Zwrot: 3-4 miesiące
+                        <strong>Quick win:</strong> Alert automatyczny przy przekroczeniu normy odpadów lub przestoju maszyny powyżej X minut
                     </div>
 
-                    <button class="accordion-btn">Zobacz szczegóły automatyzacji ▼</button>
+                    <button class="accordion-btn">Zobacz przykład automatyzacji ▼</button>
                     <div class="accordion-content">
                         <div class="case-study-detail">
-                            <h5>Jak to działa:</h5>
-                            <div class="step">Operator po zmianie wypełnia krótki formularz (WhatsApp lub Google Forms)</div>
-                            <div class="step">System analizuje: ile wyprodukowano, odpady, przestoje, uwagi</div>
-                            <div class="step">Dane trafiają do centralnego rejestru</div>
-                            <div class="step">Jeśli coś przekracza normę — natychmiast alert do kierownika</div>
-                            <div class="step">W piątek rano — raport tygodniowy (wydajność, odpady, przestoje) trafia do zarządu</div>
+                            <h5>Automatyzacja raportowania produkcji i alertów</h5>
+                            <div class="step">Operator wypełnia formularz po każdej zmianie (Google Forms lub WhatsApp)</div>
+                            <div class="step">n8n odbiera dane z formularza/wiadomości WhatsApp</div>
+                            <div class="step">Claude API analizuje: ilość sztuk, odpady, przestoje, uwagi operatora</div>
+                            <div class="step">Dane trafiają do Google Sheets (rejestr produkcji dziennej)</div>
+                            <div class="step">Jeżeli odpady przekraczają normę lub przestój > 30 min → alert do kierownika</div>
+                            <div class="step">Co piątek — raport tygodniowy OEE (wydajność, odpady, przestoje) do zarządu</div>
                             
                             <div class="tech-info">
+                                <strong>Narzędzia:</strong> n8n + Google Forms/WhatsApp + Claude API + Google Sheets + Gmail<br>
                                 <strong>Czas wdrożenia:</strong> 3-5 tygodni<br>
                                 <strong>Koszt:</strong> 6 000-10 000 zł + 700 zł/mies.
                             </div>
@@ -633,43 +620,34 @@
                 <!-- Firmy handlowe -->
                 <div class="industry-card">
                     <h3>Firmy handlowe</h3>
-                    <p class="subtitle-small">Hurtownie, dystrybutorzy, sklepy B2B</p>
+                    <p class="subtitle-small">Hurtownie, dystrybutorzy, e-commerce B2B, sklepy wielobranżowe</p>
                     
-                    <h4>Co Cię boli:</h4>
+                    <h4>Kluczowe bóle:</h4>
                     <ul>
-                        <li>Przepisujesz zamówienia z emaila do systemu po 10 minut każde</li>
-                        <li>Klient dzwoni "gdzie moja paczka?" — nie wiesz, trzeba sprawdzać</li>
-                        <li>Stany magazynowe aktualne "mniej więcej"</li>
-                        <li>Reklamacje w emailach — kto, kiedy, co — chaos</li>
-                    </ul>
-
-                    <h4>Co możesz zyskać:</h4>
-                    <ul>
-                        <li>Email z zamówieniem automatycznie trafia do systemu — AI odczytuje produkty i ilości</li>
-                        <li>Klient dostaje SMS przy każdej zmianie statusu — nie dzwoni</li>
-                        <li>Gdy towar spada poniżej minimum — dostajesz alert</li>
-                        <li>Każda reklamacja ma numer i status — widzisz co, kiedy, kto</li>
+                        <li>Ręczne wprowadzanie zamówień z email/telefonu</li>
+                        <li>Brak powiadomień o statusie dla klienta</li>
+                        <li>Kontrola stanów magazynowych nieaktualna</li>
+                        <li>Chaotyczna obsługa reklamacji</li>
                     </ul>
 
                     <div class="example-box">
-                        <strong>Przykład: Hurtownia (15 zamówień/dzień)</strong><br>
-                        Problem kosztuje: 1 800 zł/mies. (czas + błędy)<br>
-                        Rozwiązanie: 7 000-12 000 zł + 700 zł/mies.<br>
-                        Zwrot: 4-6 miesięcy
+                        <strong>Quick win:</strong> AI przetwarza zamówienia z emaila → automatyczny wpis do systemu
                     </div>
 
-                    <button class="accordion-btn">Zobacz szczegóły automatyzacji ▼</button>
+                    <button class="accordion-btn">Zobacz przykład automatyzacji ▼</button>
                     <div class="accordion-content">
                         <div class="case-study-detail">
-                            <h5>Jak to działa:</h5>
-                            <div class="step">Email z zamówieniem wpada na dedykowany adres</div>
-                            <div class="step">AI czyta treść: produkty, ilości, dane klienta, termin</div>
-                            <div class="step">System sprawdza stan magazynu</div>
-                            <div class="step">Jeśli jest towar — zapis zamówienia + potwierdzenie emailem do klienta</div>
-                            <div class="step">Jeśli brak — info do klienta + alert dla handlowca</div>
-                            <div class="step">Przy wysyłce — klient dostaje SMS z numerem przesyłki</div>
+                            <h5>Automatyzacja zamówień z emaila</h5>
+                            <div class="step">Email z zamówieniem trafia na zamowienia@firma.pl</div>
+                            <div class="step">n8n odbiera email</div>
+                            <div class="step">GPT-4o-mini ekstraktuje: produkty, ilości, dane klienta, termin dostawy</div>
+                            <div class="step">Automatyczna weryfikacja stanu magazynu (Google Sheets lub API)</div>
+                            <div class="step">Jeśli dostępny → zapis + potwierdzenie emailem do klienta</div>
+                            <div class="step">Jeśli brak towaru → email do klienta z informacją + alert dla handlowca</div>
+                            <div class="step">Przy wysyłce → automatyczne powiadomienie SMS do klienta</div>
                             
                             <div class="tech-info">
+                                <strong>Narzędzia:</strong> n8n + OpenAI API + Google Sheets + Twilio + Gmail<br>
                                 <strong>Czas wdrożenia:</strong> 3-5 tygodni<br>
                                 <strong>Koszt:</strong> 7 000-12 000 zł + 700 zł/mies.
                             </div>
