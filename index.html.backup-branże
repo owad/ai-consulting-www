@@ -602,39 +602,38 @@
                     </div>
                 </div>
 
-                <!-- Firmy produkcyjne -->
+                <!-- Firmy budowlane -->
                 <div class="industry-card">
-                    <h3>Firmy produkcyjne</h3>
-                    <p class="subtitle-small">Producenci (przemysł spożywczy, metalowy, meblarski, plastikowy, elektroniczny), zakłady produkcyjne, montażownie, produkcja na zlecenie (OEM)</p>
+                    <h3>Firmy budowlane</h3>
+                    <p class="subtitle-small">Wykonawstwo, instalacje (elektryka, hydraulika, HVAC), deweloperzy, remonty</p>
                     
                     <h4>Kluczowe bóle:</h4>
                     <ul>
-                        <li>Chaos w harmonogramach — zmiany nie docierają do wszystkich</li>
-                        <li>Zamówienia materiałów oparte na domysłach, nie danych</li>
-                        <li>Zlecenia produkcyjne w Excelu lub na papierze</li>
-                        <li>Komunikacja między zmianami chaotyczna</li>
-                        <li>Reklamacje bez systemu śledzenia statusu</li>
+                        <li>Chaos w harmonogramach — zmiany nie docierają</li>
+                        <li>Ręczne tworzenie ofert/kosztorysów (3h/oferta)</li>
+                        <li>Zagubione faktury za materiały</li>
+                        <li>Komunikacja przez WhatsApp bez dokumentacji</li>
                     </ul>
 
                     <div class="example-box">
-                        <strong>Quick win:</strong> Alert automatyczny przy przekroczeniu normy odpadów lub przestoju maszyny powyżej X minut
+                        <strong>Quick win:</strong> Czas tworzenia oferty: z 3h → 20 min (szablon + auto-wypełnianie)
                     </div>
 
                     <button class="accordion-btn">Zobacz przykład automatyzacji ▼</button>
                     <div class="accordion-content">
                         <div class="case-study-detail">
-                            <h5>Automatyzacja raportowania produkcji i alertów</h5>
-                            <div class="step">Operator wypełnia formularz po każdej zmianie (Google Forms lub WhatsApp)</div>
-                            <div class="step">n8n odbiera dane z formularza/wiadomości WhatsApp</div>
-                            <div class="step">Claude API analizuje: ilość sztuk, odpady, przestoje, uwagi operatora</div>
-                            <div class="step">Dane trafiają do Google Sheets (rejestr produkcji dziennej)</div>
-                            <div class="step">Jeżeli odpady przekraczają normę lub przestój > 30 min → alert do kierownika</div>
-                            <div class="step">Co piątek — raport tygodniowy OEE (wydajność, odpady, przestoje) do zarządu</div>
+                            <h5>Raportowanie dzienne z budowy przez WhatsApp</h5>
+                            <div class="step">Pracownik wysyła codziennie WhatsApp z podsumowaniem dnia</div>
+                            <div class="step">Bot WhatsApp zbiera raport</div>
+                            <div class="step">Claude API analizuje: postęp, materiały, problemy, czas pracy</div>
+                            <div class="step">Dane trafiają do Google Sheets (rejestr dzienny)</div>
+                            <div class="step">Jeśli raport zawiera "problem" → natychmiastowe powiadomienie kierownika</div>
+                            <div class="step">Co piątek — automatyczny raport tygodniowy dla inwestora emailem</div>
                             
                             <div class="tech-info">
-                                <strong>Narzędzia:</strong> n8n + Google Forms/WhatsApp + Claude API + Google Sheets + Gmail<br>
-                                <strong>Czas wdrożenia:</strong> 3-5 tygodni<br>
-                                <strong>Koszt:</strong> 6 000-10 000 zł + 700 zł/mies.
+                                <strong>Narzędzia:</strong> n8n + WhatsApp Business API + Claude + Google Sheets<br>
+                                <strong>Czas wdrożenia:</strong> 3-4 tygodnie<br>
+                                <strong>Koszt:</strong> 6 000-9 000 zł + 600 zł/mies.
                             </div>
                         </div>
                     </div>
