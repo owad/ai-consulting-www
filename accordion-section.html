@@ -1,0 +1,102 @@
+<!-- Dodaj to do stylów CSS w <style> -->
+<style>
+.accordion-btn {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 12px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.accordion-btn:hover {
+    background: var(--primary);
+    color: var(--darker);
+    box-shadow: 0 0 15px var(--glow);
+}
+
+.accordion-btn.active {
+    background: var(--primary);
+    color: var(--darker);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    margin-top: 0;
+}
+
+.accordion-content.active {
+    max-height: 1000px;
+    margin-top: 20px;
+}
+
+.case-study-detail {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    border-left: 3px solid var(--secondary);
+    margin-top: 15px;
+}
+
+.case-study-detail h5 {
+    color: var(--secondary);
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.case-study-detail .step {
+    padding: 8px 0 8px 25px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+.case-study-detail .step:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.case-study-detail .tech-info {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0, 240, 255, 0.05);
+    border-radius: 5px;
+}
+
+.case-study-detail .tech-info strong {
+    color: var(--primary);
+}
+</style>
+
+<!-- Dodaj to przed zamknięciem </body> -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const accordionBtns = document.querySelectorAll('.accordion-btn');
+    
+    accordionBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            this.classList.toggle('active');
+            
+            const content = this.nextElementSibling;
+            content.classList.toggle('active');
+            
+            if (content.classList.contains('active')) {
+                this.textContent = 'Ukryj przykład ▲';
+            } else {
+                this.textContent = 'Zobacz przykład automatyzacji ▼';
+            }
+        });
+    });
+});
+</script>

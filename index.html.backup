@@ -180,7 +180,7 @@
 
         .industry-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
         }
 
@@ -199,15 +199,15 @@
         .industry-card h3 {
             color: var(--primary);
             font-family: 'Orbitron', sans-serif;
-            font-size: 1.6rem;
-            margin-bottom: 10px;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
             text-transform: uppercase;
         }
 
         .industry-card .subtitle-small {
             color: rgba(255, 255, 255, 0.6);
             font-size: 0.9rem;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-style: italic;
         }
 
@@ -223,10 +223,9 @@
         }
 
         .industry-card li {
-            padding: 6px 0;
+            padding: 8px 0;
             color: rgba(255, 255, 255, 0.8);
-            line-height: 1.5;
-            font-size: 0.95rem;
+            line-height: 1.6;
         }
 
         .industry-card li:before {
@@ -239,90 +238,9 @@
             padding: 15px;
             margin-top: 15px;
             border-left: 3px solid var(--primary);
-            font-size: 0.95rem;
         }
 
         .example-box strong {
-            color: var(--primary);
-        }
-
-        /* Accordion */
-        .accordion-btn {
-            background: transparent;
-            border: 1px solid var(--primary);
-            color: var(--primary);
-            padding: 12px 30px;
-            margin-top: 20px;
-            cursor: pointer;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: all 0.3s;
-            width: 100%;
-        }
-
-        .accordion-btn:hover {
-            background: rgba(0, 240, 255, 0.1);
-            box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
-        }
-
-        .accordion-btn.active {
-            background: var(--primary);
-            color: var(--darker);
-        }
-
-        .accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease-out;
-        }
-
-        .accordion-content.active {
-            max-height: 1200px;
-            margin-top: 20px;
-        }
-
-        .case-study-detail {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 25px;
-            border: 1px solid rgba(112, 0, 255, 0.3);
-            border-left: 4px solid var(--secondary);
-        }
-
-        .case-study-detail h5 {
-            color: var(--secondary);
-            font-family: 'Orbitron', sans-serif;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-        }
-
-        .case-study-detail .step {
-            padding: 8px 0 8px 25px;
-            position: relative;
-            color: rgba(255, 255, 255, 0.85);
-            line-height: 1.6;
-            font-size: 0.95rem;
-        }
-
-        .case-study-detail .step:before {
-            content: "→";
-            position: absolute;
-            left: 0;
-            color: var(--secondary);
-            font-weight: bold;
-        }
-
-        .case-study-detail .tech-info {
-            margin-top: 20px;
-            padding: 15px;
-            background: rgba(0, 240, 255, 0.05);
-            border-radius: 5px;
-            font-size: 0.9rem;
-        }
-
-        .case-study-detail .tech-info strong {
             color: var(--primary);
         }
 
@@ -391,7 +309,7 @@
 
         .package .note {
             color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             margin-top: 15px;
             font-style: italic;
         }
@@ -419,6 +337,53 @@
 
         .comparison-table tr:hover {
             background: rgba(0, 240, 255, 0.05);
+        }
+
+        .use-cases {
+            background: rgba(112, 0, 255, 0.05);
+        }
+
+        .use-case {
+            background: rgba(10, 14, 39, 0.6);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .use-case h4 {
+            color: var(--secondary);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .use-case .scenario {
+            margin-top: 15px;
+        }
+
+        .use-case .step {
+            padding: 8px 0 8px 25px;
+            position: relative;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .use-case .step:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        .use-case .tools {
+            margin-top: 15px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+
+        .use-case .tools strong {
+            color: var(--primary);
         }
 
         .cta-section {
@@ -511,8 +476,8 @@
                 padding: 50px 20px;
             }
 
-            .industry-grid {
-                grid-template-columns: 1fr;
+            .comparison-table {
+                font-size: 0.85rem;
             }
         }
     </style>
@@ -556,12 +521,11 @@
 
     <section class="section industries">
         <div class="container">
-            <h2 class="section-title">Branże i automatyzacje</h2>
+            <h2 class="section-title">Specjalizacje branżowe</h2>
             <div class="industry-grid">
-                <!-- Firmy usługowe -->
                 <div class="industry-card">
                     <h3>Firmy usługowe</h3>
-                    <p class="subtitle-small">Gabinety lekarskie, stomatologiczne, salony beauty, fryzjerskie, SPA, warsztaty, biura rachunkowe, kancelarie prawne</p>
+                    <p class="subtitle-small">Gabinety lekarskie, stomatologiczne, salony beauty, fryzjerskie, SPA, warsztaty, biura rachunkowe, kancelarie prawne, agencje marketingowe</p>
                     
                     <h4>Kluczowe bóle:</h4>
                     <ul>
@@ -569,75 +533,40 @@
                         <li>Brak przypomnień → no-show rate 15-25%</li>
                         <li>Ręczne wystawianie faktur</li>
                         <li>Odpowiadanie na te same pytania wielokrotnie</li>
+                        <li>Opinie klientów zbierane chaotycznie</li>
                     </ul>
 
                     <div class="example-box">
-                        <strong>Quick win:</strong> Automatyczne potwierdzenie wizyty SMS 24h przed → redukcja no-show o 40-60%
+                        <strong>Quick win:</strong> Chatbot FAQ na stronie + automatyczne potwierdzenie wizyty SMS 24h przed → redukcja no-show o 40-60%
                     </div>
 
                     <div class="example-box">
-                        <strong>ROI (salon 8 pracowników):</strong> Koszt problemu: 1 650 zł/mies. | Automatyzacja: 3 500 zł + 400 zł/mies. | Zwrot: 2,5 mies.
-                    </div>
-
-                    <button class="accordion-btn">Zobacz przykład automatyzacji ▼</button>
-                    <div class="accordion-content">
-                        <div class="case-study-detail">
-                            <h5>Pełna automatyzacja obsługi rezerwacji</h5>
-                            <div class="step">Klient wypełnia formularz rezerwacji na stronie</div>
-                            <div class="step">n8n odbiera dane i sprawdza dostępność w Google Calendar</div>
-                            <div class="step">Zapis wizyty w kalendarzu + CRM (Airtable)</div>
-                            <div class="step">SMS potwierdzający wysłany do klienta (Twilio)</div>
-                            <div class="step">24h przed wizytą — automatyczne przypomnienie SMS + email</div>
-                            <div class="step">2h po wizycie — prośba o opinię Google z linkiem</div>
-                            <div class="step">Tygodniowy raport: liczba wizyt, przychód, no-show rate</div>
-                            
-                            <div class="tech-info">
-                                <strong>Narzędzia:</strong> n8n + Google Calendar + Airtable + Twilio + Gmail<br>
-                                <strong>Czas wdrożenia:</strong> 2-3 tygodnie<br>
-                                <strong>Koszt:</strong> 3 500-5 000 zł + 400 zł/mies.
-                            </div>
-                        </div>
+                        <strong>ROI przykład (salon 8 pracowników):</strong><br>
+                        Problem: recepcjonistka 3h/dzień na potwierdzenia<br>
+                        Koszt: 3h × 25 zł × 22 dni = 1 650 zł/mies.<br>
+                        Automatyzacja: 3 500 zł + 400 zł/mies.<br>
+                        Zwrot: ~2,5 miesiąca
                     </div>
                 </div>
 
-                <!-- Firmy budowlane -->
                 <div class="industry-card">
                     <h3>Firmy budowlane</h3>
                     <p class="subtitle-small">Wykonawstwo, instalacje (elektryka, hydraulika, HVAC), deweloperzy, remonty</p>
                     
                     <h4>Kluczowe bóle:</h4>
                     <ul>
-                        <li>Chaos w harmonogramach — zmiany nie docierają</li>
-                        <li>Ręczne tworzenie ofert/kosztorysów (3h/oferta)</li>
+                        <li>Chaos w harmonogramach — zmiany nie docierają do wszystkich</li>
+                        <li>Ręczne tworzenie ofert/kosztorysów</li>
                         <li>Zagubione faktury za materiały</li>
-                        <li>Komunikacja przez WhatsApp bez dokumentacji</li>
+                        <li>Brak śledzenia czasu pracy ekip</li>
+                        <li>Komunikacja przez WhatsApp — brak dokumentacji</li>
                     </ul>
 
                     <div class="example-box">
-                        <strong>Quick win:</strong> Czas tworzenia oferty: z 3h → 20 min (szablon + auto-wypełnianie)
-                    </div>
-
-                    <button class="accordion-btn">Zobacz przykład automatyzacji ▼</button>
-                    <div class="accordion-content">
-                        <div class="case-study-detail">
-                            <h5>Raportowanie dzienne z budowy przez WhatsApp</h5>
-                            <div class="step">Pracownik wysyła codziennie WhatsApp z podsumowaniem dnia</div>
-                            <div class="step">Bot WhatsApp zbiera raport</div>
-                            <div class="step">Claude API analizuje: postęp, materiały, problemy, czas pracy</div>
-                            <div class="step">Dane trafiają do Google Sheets (rejestr dzienny)</div>
-                            <div class="step">Jeśli raport zawiera "problem" → natychmiastowe powiadomienie kierownika</div>
-                            <div class="step">Co piątek — automatyczny raport tygodniowy dla inwestora emailem</div>
-                            
-                            <div class="tech-info">
-                                <strong>Narzędzia:</strong> n8n + WhatsApp Business API + Claude + Google Sheets<br>
-                                <strong>Czas wdrożenia:</strong> 3-4 tygodnie<br>
-                                <strong>Koszt:</strong> 6 000-9 000 zł + 600 zł/mies.
-                            </div>
-                        </div>
+                        <strong>Quick win:</strong> Bot WhatsApp do raportowania dziennego ekip → zdjęcia + dane automatycznie do arkusza. Czas tworzenia oferty: z 3h do 20 min.
                     </div>
                 </div>
 
-                <!-- Firmy handlowe -->
                 <div class="industry-card">
                     <h3>Firmy handlowe</h3>
                     <p class="subtitle-small">Hurtownie, dystrybutorzy, e-commerce B2B, sklepy wielobranżowe</p>
@@ -648,30 +577,11 @@
                         <li>Brak powiadomień o statusie dla klienta</li>
                         <li>Kontrola stanów magazynowych nieaktualna</li>
                         <li>Chaotyczna obsługa reklamacji</li>
+                        <li>Żmudne raportowanie sprzedaży</li>
                     </ul>
 
                     <div class="example-box">
-                        <strong>Quick win:</strong> AI przetwarza zamówienia z emaila → automatyczny wpis do systemu
-                    </div>
-
-                    <button class="accordion-btn">Zobacz przykład automatyzacji ▼</button>
-                    <div class="accordion-content">
-                        <div class="case-study-detail">
-                            <h5>Automatyzacja zamówień z emaila</h5>
-                            <div class="step">Email z zamówieniem trafia na zamowienia@firma.pl</div>
-                            <div class="step">n8n odbiera email</div>
-                            <div class="step">GPT-4o-mini ekstraktuje: produkty, ilości, dane klienta, termin dostawy</div>
-                            <div class="step">Automatyczna weryfikacja stanu magazynu (Google Sheets lub API)</div>
-                            <div class="step">Jeśli dostępny → zapis + potwierdzenie emailem do klienta</div>
-                            <div class="step">Jeśli brak towaru → email do klienta z informacją + alert dla handlowca</div>
-                            <div class="step">Przy wysyłce → automatyczne powiadomienie SMS do klienta</div>
-                            
-                            <div class="tech-info">
-                                <strong>Narzędzia:</strong> n8n + OpenAI API + Google Sheets + Twilio + Gmail<br>
-                                <strong>Czas wdrożenia:</strong> 3-5 tygodni<br>
-                                <strong>Koszt:</strong> 7 000-12 000 zł + 700 zł/mies.
-                            </div>
-                        </div>
+                        <strong>Quick win:</strong> AI przetwarza zamówienia z emaila → automatyczny wpis do ERP/arkusza. Powiadomienia SMS/email przy zmianie statusu zamówienia.
                     </div>
                 </div>
             </div>
@@ -695,7 +605,7 @@
                         <li>Wsparcie: 30 dni (email/telefon, reakcja do 24h)</li>
                         <li>Szkolenie: 1 sesja 90 min dla 1-2 osób</li>
                     </ul>
-                    <p class="note">Bramka zaufania. Minimalny ryzyko, szybki efekt.</p>
+                    <p class="note">Cel: bramka zaufania. Minimalny ryzyko, szybki efekt. 60-90 dni → abonament lub Standard.</p>
                 </div>
 
                 <div class="package">
@@ -706,27 +616,27 @@
                         <li>Kompleksowa automatyzacja działu/procesu</li>
                         <li>Pełny audyt procesów działu</li>
                         <li>Wdrożenie 3-8 powiązanych automatyzacji</li>
-                        <li>Integracja do 8 narzędzi (CRM, ERP, email)</li>
-                        <li>Dashboard raportowy</li>
+                        <li>Integracja do 8 narzędzi (CRM, ERP, email, komunikatory)</li>
+                        <li>Dashboard raportowy (Google Data Studio lub dedykowany)</li>
                         <li>Szkolenie zespołu: 2-3 sesje</li>
-                        <li>Abonament: monitoring + optymalizacja</li>
+                        <li>Abonament: monitoring, szybkie naprawy, miesięczny raport optymalizacyjny</li>
                     </ul>
-                    <p class="note">Najpopularniejszy. Pełna transformacja procesu.</p>
+                    <p class="note">Najpopularniejszy. Pełna transformacja procesu biznesowego.</p>
                 </div>
 
                 <div class="package">
                     <h3>Enterprise MSP</h3>
                     <div class="price">20 000 – 50 000 zł</div>
-                    <div class="duration">+ abonament od 2 000 zł/mies.</div>
+                    <div class="duration">+ abonament od 2 000 zł/mies. | Realizacja: indywidualna</div>
                     <ul>
-                        <li>Pełny audyt organizacji</li>
-                        <li>Wdrożenie wielu automatyzacji (min. 3 działy)</li>
-                        <li>Dedykowany dashboard i raportowanie</li>
-                        <li>Szkolenie całego zespołu</li>
-                        <li>SLA: reakcja do 4h roboczych</li>
-                        <li>Kwartalny przegląd + roadmapa</li>
+                        <li>Pełny audyt organizacji i mapa procesów</li>
+                        <li>Wdrożenie wielu powiązanych automatyzacji (min. 3 działy)</li>
+                        <li>Dedykowany dashboard i system raportowania</li>
+                        <li>Szkolenie całego zespołu + dokumentacja procesowa</li>
+                        <li>SLA: reakcja do 4h w godzinach roboczych</li>
+                        <li>Kwartalny przegląd i roadmapa nowych automatyzacji</li>
                     </ul>
-                    <p class="note">Dla firm 20-100 pracowników z złożonymi procesami.</p>
+                    <p class="note">Dla firm 20-100 pracowników z złożonymi procesami operacyjnymi i wieloma systemami (ERP, CRM, magazyn).</p>
                 </div>
             </div>
 
@@ -746,22 +656,88 @@
                         <td>2-4 tygodnie</td>
                     </tr>
                     <tr>
-                        <td>Bariera wejścia</td>
-                        <td>Wysoka (przetargi)</td>
-                        <td>Niska (rozmowa)</td>
+                        <td>Bariera wejścia dla klienta</td>
+                        <td>Wysoka (przetargi, RFP)</td>
+                        <td>Niska (rozmowa telefoniczna)</td>
                     </tr>
                     <tr>
-                        <td>Język oferty</td>
-                        <td>Techniczny</td>
-                        <td>Biznesowy</td>
+                        <td>Zrozumiałość oferty</td>
+                        <td>Techniczna</td>
+                        <td>Biznesowa</td>
                     </tr>
                     <tr>
-                        <td>Obsługa</td>
+                        <td>Model cenowy</td>
+                        <td>Projekt + maintenance</td>
+                        <td>Projekt + abonament</td>
+                    </tr>
+                    <tr>
+                        <td>Skalowalność</td>
+                        <td>Ograniczona</td>
+                        <td>Wysoka (SaaS tools)</td>
+                    </tr>
+                    <tr>
+                        <td>Obsługa posprzedażowa</td>
                         <td>Ticketowa</td>
                         <td>Proaktywna</td>
                     </tr>
                 </tbody>
             </table>
+        </div>
+    </section>
+
+    <section class="section use-cases">
+        <div class="container">
+            <h2 class="section-title">Przykłady automatyzacji</h2>
+            
+            <div class="use-case">
+                <h4>Salon beauty — pełna automatyzacja obsługi rezerwacji</h4>
+                <div class="scenario">
+                    <div class="step">Klient wypełnia formularz rezerwacji na stronie</div>
+                    <div class="step">n8n odbiera dane i sprawdza dostępność w Google Calendar</div>
+                    <div class="step">Zapis wizyty w kalendarzu + CRM (Airtable)</div>
+                    <div class="step">SMS potwierdzający wysłany do klienta (Twilio)</div>
+                    <div class="step">24h przed wizytą — automatyczne przypomnienie SMS + email</div>
+                    <div class="step">2h po wizycie — prośba o opinię Google z linkiem</div>
+                    <div class="step">Tygodniowy raport: liczba wizyt, przychód, no-show rate</div>
+                </div>
+                <div class="tools">
+                    <strong>Narzędzia:</strong> n8n + Google Calendar + Airtable + Twilio + Gmail<br>
+                    <strong>Czas wdrożenia:</strong> 2-3 tygodnie | <strong>Koszt:</strong> 3 500-5 000 zł + 400 zł/mies.
+                </div>
+            </div>
+
+            <div class="use-case">
+                <h4>Firma budowlana — raportowanie dzienne z budowy</h4>
+                <div class="scenario">
+                    <div class="step">Pracownik wysyła codziennie WhatsApp z podsumowaniem dnia</div>
+                    <div class="step">Bot WhatsApp zbiera raport</div>
+                    <div class="step">Claude API analizuje: postęp, materiały, problemy, czas pracy</div>
+                    <div class="step">Dane trafiają do Google Sheets (rejestr dzienny)</div>
+                    <div class="step">Jeśli raport zawiera "problem" → natychmiastowe powiadomienie kierownika</div>
+                    <div class="step">Co piątek — automatyczny raport tygodniowy dla inwestora</div>
+                </div>
+                <div class="tools">
+                    <strong>Narzędzia:</strong> n8n + WhatsApp Business + Claude API + Google Sheets + Gmail<br>
+                    <strong>Czas wdrożenia:</strong> 3-4 tygodnie | <strong>Koszt:</strong> 6 000-9 000 zł + 600 zł/mies.
+                </div>
+            </div>
+
+            <div class="use-case">
+                <h4>Hurtownia — automatyzacja zamówień z emaila</h4>
+                <div class="scenario">
+                    <div class="step">Email z zamówieniem trafia na zamowienia@firma.pl</div>
+                    <div class="step">n8n odbiera email</div>
+                    <div class="step">GPT-4o-mini ekstraktuje: produkty, ilości, dane klienta, termin</div>
+                    <div class="step">Automatyczna weryfikacja stanu magazynu</div>
+                    <div class="step">Jeśli dostępny → zapis + potwierdzenie emailem do klienta</div>
+                    <div class="step">Jeśli brak → email do klienta z informacją + alert dla handlowca</div>
+                    <div class="step">Przy wysyłce — automatyczne powiadomienie SMS do klienta</div>
+                </div>
+                <div class="tools">
+                    <strong>Narzędzia:</strong> n8n + OpenAI API + Google Sheets + Twilio + Gmail<br>
+                    <strong>Czas wdrożenia:</strong> 3-5 tygodni | <strong>Koszt:</strong> 7 000-12 000 zł + 700 zł/mies.
+                </div>
+            </div>
         </div>
     </section>
 
@@ -776,29 +752,8 @@
     <footer>
         <div class="container">
             <p>&copy; 2026 Konsultacje AI & Automatyzacja Procesów MSP</p>
-            <p style="margin-top: 10px; font-size: 0.8rem;">n8n | Make | Zapier | OpenAI | Claude</p>
+            <p style="margin-top: 10px; font-size: 0.8rem;">n8n | Make | Zapier | OpenAI | Claude | Praktyczne rozwiązania dla firm 2-100 pracowników</p>
         </div>
     </footer>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const accordionBtns = document.querySelectorAll('.accordion-btn');
-        
-        accordionBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                this.classList.toggle('active');
-                
-                const content = this.nextElementSibling;
-                content.classList.toggle('active');
-                
-                if (content.classList.contains('active')) {
-                    this.textContent = 'Ukryj przykład ▲';
-                } else {
-                    this.textContent = 'Zobacz przykład automatyzacji ▼';
-                }
-            });
-        });
-    });
-    </script>
 </body>
 </html>
