@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Profesjonalne konsultacje AI dla biznesu">
-    <title>AI Konsultacje</title>
+    <meta name="description" content="Automatyzujemy powtarzalne procesy w Twojej firmie, żebyś mógł skupić się na tym, co naprawdę generuje zysk">
+    <title>Konsultacje AI & Automatyzacja Procesów dla MSP</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap');
 
@@ -29,7 +29,6 @@
             overflow-x: hidden;
         }
 
-        /* Animated background */
         body::before {
             content: '';
             position: fixed;
@@ -55,7 +54,6 @@
             padding: 0 40px;
         }
 
-        /* Header */
         header {
             padding: 100px 40px;
             text-align: center;
@@ -82,7 +80,7 @@
 
         h1 {
             font-family: 'Orbitron', sans-serif;
-            font-size: 4.5rem;
+            font-size: 3.5rem;
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 8px;
@@ -92,31 +90,33 @@
             background-clip: text;
             margin-bottom: 1rem;
             text-shadow: 0 0 30px var(--glow);
-            animation: glitch 5s infinite;
         }
 
-        @keyframes glitch {
-            0%, 100% { text-shadow: 0 0 30px var(--glow); }
-            50% { text-shadow: 0 0 50px var(--glow), 0 0 100px var(--glow); }
-        }
-
-        header p {
-            font-size: 1.5rem;
+        .tagline {
+            font-size: 1.8rem;
             letter-spacing: 3px;
             color: var(--primary);
             font-weight: 300;
+            margin-bottom: 1rem;
         }
 
-        /* Services */
-        .services {
-            padding: 100px 40px;
+        .subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .section {
+            padding: 80px 40px;
         }
 
         .section-title {
             font-family: 'Orbitron', sans-serif;
-            font-size: 3rem;
+            font-size: 2.5rem;
             text-align: center;
-            margin-bottom: 80px;
+            margin-bottom: 60px;
             text-transform: uppercase;
             letter-spacing: 6px;
             color: var(--primary);
@@ -134,115 +134,145 @@
             background: linear-gradient(90deg, transparent, var(--primary), transparent);
         }
 
-        .service-grid {
+        .packages-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 40px;
+            margin-top: 60px;
         }
 
-        .service-card {
+        .package {
             background: rgba(10, 14, 39, 0.6);
             border: 1px solid rgba(0, 240, 255, 0.2);
             padding: 40px;
             position: relative;
             overflow: hidden;
-            transition: all 0.3s ease;
             backdrop-filter: blur(10px);
+            transition: all 0.3s;
         }
 
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.1), transparent);
-            transition: left 0.5s;
-        }
-
-        .service-card:hover::before {
-            left: 100%;
-        }
-
-        .service-card:hover {
+        .package:hover {
             border-color: var(--primary);
             box-shadow: 0 0 30px var(--glow);
             transform: translateY(-10px);
         }
 
-        .service-card h3 {
+        .package h3 {
             font-family: 'Orbitron', sans-serif;
             font-size: 1.8rem;
             color: var(--primary);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             text-transform: uppercase;
-            letter-spacing: 3px;
         }
 
-        .service-card p {
-            line-height: 1.8;
+        .package .price {
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .package ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .package li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             color: rgba(255, 255, 255, 0.8);
-            font-size: 1.1rem;
         }
 
-        /* About */
-        .about {
-            padding: 100px 40px;
+        .package li:before {
+            content: "▸ ";
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .industries {
             background: rgba(0, 240, 255, 0.02);
             border-top: 1px solid rgba(0, 240, 255, 0.2);
             border-bottom: 1px solid rgba(0, 240, 255, 0.2);
         }
 
-        .about-content {
-            max-width: 900px;
-            margin: 0 auto;
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
         }
 
-        .about p {
-            font-size: 1.3rem;
-            line-height: 2;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 1.5rem;
+        .industry-card {
+            background: rgba(10, 14, 39, 0.4);
+            padding: 30px;
+            border-left: 3px solid var(--primary);
         }
 
-        /* Contact */
-        .contact {
-            padding: 100px 40px;
+        .industry-card h3 {
+            color: var(--primary);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .industry-card p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .industry-card .example {
+            font-size: 0.95rem;
+            color: rgba(0, 240, 255, 0.8);
+            font-style: italic;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .benefit {
             text-align: center;
+            padding: 30px;
         }
 
-        .contact-box {
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 50px;
-            background: rgba(10, 14, 39, 0.6);
-            border: 2px solid var(--primary);
-            position: relative;
-            backdrop-filter: blur(10px);
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
         }
 
-        .contact-box::before,
-        .contact-box::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            border: 2px solid var(--primary);
+        .benefit h3 {
+            color: var(--primary);
+            font-family: 'Orbitron', sans-serif;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
         }
 
-        .contact-box::before {
-            top: -2px;
-            left: -2px;
-            border-right: none;
-            border-bottom: none;
+        .benefit p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
         }
 
-        .contact-box::after {
-            bottom: -2px;
-            right: -2px;
-            border-left: none;
-            border-top: none;
+        .cta-section {
+            text-align: center;
+            padding: 100px 40px;
+            background: linear-gradient(135deg, rgba(0, 240, 255, 0.1), rgba(112, 0, 255, 0.1));
+        }
+
+        .cta-section h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+
+        .cta-section p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.9);
         }
 
         .btn {
@@ -282,7 +312,6 @@
             box-shadow: 0 0 30px var(--glow);
         }
 
-        /* Footer */
         footer {
             padding: 40px;
             text-align: center;
@@ -293,26 +322,25 @@
             color: rgba(255, 255, 255, 0.6);
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
                 letter-spacing: 4px;
             }
 
-            .section-title {
-                font-size: 2rem;
+            .tagline {
+                font-size: 1.3rem;
             }
 
-            .service-grid {
-                grid-template-columns: 1fr;
+            .section-title {
+                font-size: 1.8rem;
             }
 
             .container {
                 padding: 0 20px;
             }
 
-            header, .services, .about, .contact {
+            .section, .cta-section {
                 padding: 60px 20px;
             }
         }
@@ -321,77 +349,139 @@
 <body>
     <header>
         <div class="container">
-            <h1>AI KONSULTACJE</h1>
-            <p>PRZYSZŁOŚĆ ZACZYNA SIĘ DZIŚ</p>
+            <h1>AI & Automatyzacja</h1>
+            <p class="tagline">Dla małych i średnich przedsiębiorstw</p>
+            <p class="subtitle">
+                Automatyzujemy powtarzalne procesy w Twojej firmie,<br>
+                żebyś mógł skupić się na tym, co naprawdę generuje zysk
+            </p>
         </div>
     </header>
 
-    <section class="services">
+    <section class="section">
         <div class="container">
-            <h2 class="section-title">Usługi</h2>
-            <div class="service-grid">
-                <div class="service-card">
-                    <h3>Strategia AI</h3>
-                    <p>Opracowanie kompleksowej strategii wdrożenia sztucznej inteligencji dostosowanej do specyfiki Twojego biznesu. Analiza potencjału, identyfikacja obszarów zastosowań, roadmapa implementacji.</p>
+            <h2 class="section-title">Dlaczego my?</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Szybki efekt</h3>
+                    <p>Pierwsza automatyzacja działa w 2-4 tygodnie od podpisania umowy</p>
                 </div>
-
-                <div class="service-card">
-                    <h3>Automatyzacja</h3>
-                    <p>Projektowanie i wdrażanie inteligentnych systemów automatyzacji procesów biznesowych. Redukcja kosztów operacyjnych, zwiększenie efektywności, eliminacja błędów ludzkich.</p>
+                <div class="benefit">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Konkretne oszczędności</h3>
+                    <p>Nie sprzedajemy technologii — sprzedajemy zaoszczędzony czas i zredukowane koszty</p>
                 </div>
-
-                <div class="service-card">
-                    <h3>Integracje</h3>
-                    <p>Bezproblemowa integracja rozwiązań AI z istniejącymi systemami IT. Łączenie modeli językowych, narzędzi analitycznych i platform automatyzacji z infrastrukturą biznesową.</p>
+                <div class="benefit">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Stała opieka</h3>
+                    <p>Monitoring, szybkie naprawy i proaktywna optymalizacja w abonamencie</p>
                 </div>
-
-                <div class="service-card">
-                    <h3>Analityka</h3>
-                    <p>Zaawansowana analiza danych z wykorzystaniem uczenia maszynowego. Predykcje, wykrywanie wzorców, optymalizacja decyzji biznesowych na podstawie danych.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Szkolenia</h3>
-                    <p>Kompleksowe programy szkoleniowe dla zespołów. Od podstaw AI po zaawansowane zastosowania biznesowe. Warsztaty praktyczne, case studies, best practices.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Konsulting</h3>
-                    <p>Indywidualne doradztwo techniczne i biznesowe. Audyt procesów, dobór narzędzi, wsparcie w podejmowaniu decyzji strategicznych dotyczących AI.</p>
+                <div class="benefit">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Bez technicznego żargonu</h3>
+                    <p>Praktyczne rozwiązania bez wymagania wiedzy technicznej</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about">
+    <section class="section industries">
         <div class="container">
-            <h2 class="section-title">O nas</h2>
-            <div class="about-content">
-                <p>
-                    Łączymy głęboką wiedzę techniczną z praktycznym doświadczeniem biznesowym. Specjalizujemy się w implementacji rozwiązań AI dla firm, które chcą wykorzystać potencjał sztucznej inteligencji do osiągnięcia przewagi konkurencyjnej.
-                </p>
-                <p>
-                    Naszym celem jest demokratyzacja dostępu do zaawansowanych technologii AI. Pomagamy organizacjom — od startupów po korporacje — w transformacji cyfrowej opartej na inteligentnych systemach.
-                </p>
+            <h2 class="section-title">Specjalizacje branżowe</h2>
+            <div class="industry-grid">
+                <div class="industry-card">
+                    <h3>Firmy usługowe</h3>
+                    <p>Gabinety lekarskie, salony beauty, warsztaty, biura rachunkowe, kancelarie prawne</p>
+                    <p class="example">
+                        Przykład: Automatyczne potwierdzenia wizyt SMS/email → redukcja no-show o 40-60%
+                    </p>
+                </div>
+
+                <div class="industry-card">
+                    <h3>Firmy budowlane</h3>
+                    <p>Wykonawstwo, instalacje, deweloperzy, remonty</p>
+                    <p class="example">
+                        Przykład: Automatyczne raportowanie z budowy przez WhatsApp → transparentność dla inwestora
+                    </p>
+                </div>
+
+                <div class="industry-card">
+                    <h3>Firmy handlowe</h3>
+                    <p>Hurtownie, dystrybutorzy, e-commerce B2B, sklepy wielobranżowe</p>
+                    <p class="example">
+                        Przykład: AI przetwarza zamówienia z emaila → redukcja czasu z 3h do 20 min
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="contact">
+    <section class="section">
         <div class="container">
-            <h2 class="section-title">Kontakt</h2>
-            <div class="contact-box">
-                <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9);">
-                    Gotowy na transformację AI?
-                </p>
-                <a href="mailto:kontakt@example.com" class="btn">Skontaktuj się</a>
+            <h2 class="section-title">Pakiety</h2>
+            <div class="packages-grid">
+                <div class="package">
+                    <h3>Starter</h3>
+                    <div class="price">2 500 – 4 500 zł</div>
+                    <ul>
+                        <li>Jeden zautomatyzowany proces (end-to-end)</li>
+                        <li>Czas realizacji: 1-2 tygodnie</li>
+                        <li>Integracja z max. 3 narzędziami</li>
+                        <li>Wsparcie techniczne: 30 dni</li>
+                        <li>Dokumentacja + szkolenie (90 min)</li>
+                    </ul>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; margin-top: 15px;">
+                        Idealny test — minimalny ryzyko, szybki efekt
+                    </p>
+                </div>
+
+                <div class="package">
+                    <h3>Standard</h3>
+                    <div class="price">6 000 – 15 000 zł</div>
+                    <ul>
+                        <li>Kompleksowa automatyzacja działu/procesu</li>
+                        <li>Czas realizacji: 3-6 tygodni</li>
+                        <li>Integracja do 8 narzędzi</li>
+                        <li>Abonament: 500-1500 zł/mies.</li>
+                        <li>Dashboard raportowy</li>
+                        <li>Szkolenie zespołu (2-3 sesje)</li>
+                    </ul>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; margin-top: 15px;">
+                        Najpopularniejszy — pełna transformacja procesu
+                    </p>
+                </div>
+
+                <div class="package">
+                    <h3>Enterprise MSP</h3>
+                    <div class="price">20 000 – 50 000 zł</div>
+                    <ul>
+                        <li>Pełny audyt organizacji</li>
+                        <li>Wdrożenie wielu powiązanych automatyzacji</li>
+                        <li>Dedykowany dashboard</li>
+                        <li>Abonament: od 2 000 zł/mies.</li>
+                        <li>SLA: reakcja do 4h</li>
+                        <li>Kwartalny przegląd + roadmapa</li>
+                    </ul>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; margin-top: 15px;">
+                        Dla firm 20-100 pracowników z złożonymi procesami
+                    </p>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Gotowy na automatyzację?</h2>
+            <p>Umów się na bezpłatną konsultację i audyt jednego procesu</p>
+            <a href="mailto:kontakt@example.com" class="btn">Skontaktuj się</a>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 AI KONSULTACJE</p>
+            <p>&copy; 2026 AI Konsultacje & Automatyzacja Procesów MSP</p>
         </div>
     </footer>
 </body>
