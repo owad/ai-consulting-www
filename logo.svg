@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="75" viewBox="0 0 640 75">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="60" viewBox="0 0 640 60">
   <defs>
     <style>
       .logo{font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;}
     </style>
   </defs>
   
-  <rect x="0" y="0" width="640" height="75" rx="12" fill="#0f1923"/>
-  <rect x="0" y="0" width="640" height="75" rx="12" fill="none" stroke="#00b8e6" stroke-width="0.5" opacity="0.4"/>
-  
-  <g transform="translate(6,15.5) scale(0.50)">
+  <!-- Ikona C z kropką -->
+  <g transform="translate(0,6) scale(0.50)">
     <path d="M 66.52 31.00 A 26 26 0 1 0 66.52 57.00" fill="none" stroke="#00d4ff" stroke-width="10" stroke-linecap="round"/>
     <circle cx="44" cy="44" r="9" fill="#00d4ff"/>
   </g>
   
-  <text x="64" y="48.8" class="logo" font-size="32" fill="#ffffff" letter-spacing="-0.5">ai.codePit</text>
-  <circle cx="206.1" cy="25.2" r="3.5" fill="#00d4ff"/>
+  <!-- ai.codePit -->
+  <text x="58" y="42" class="logo" font-size="32" fill="#ffffff" letter-spacing="-0.5">ai.codePit</text>
+  <circle cx="200" cy="18" r="3.5" fill="#00d4ff"/>
   
-  <line x1="239" y1="13" x2="239" y2="67" stroke="#00d4ff" stroke-width="0.5" opacity="0.3"/>
+  <!-- Separator -->
+  <line x1="233" y1="8" x2="233" y2="52" stroke="#00d4ff" stroke-width="0.5" opacity="0.3"/>
   
-  <text x="255" y="48.8" font-family="'Inter',Arial,sans-serif" font-size="12" fill="#00b8e6" letter-spacing="2">AUTOMATYZACJA AI DLA MŚP</text>
+  <!-- Tagline -->
+  <text x="249" y="42" font-family="'Inter',Arial,sans-serif" font-size="11" fill="#00b8e6" letter-spacing="2.5" opacity="0.8">AUTOMATYZACJA AI DLA MŚP</text>
 </svg>
